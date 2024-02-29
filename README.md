@@ -64,14 +64,14 @@ Python 3.9.17
 
 python3 -m venv venv
 source venv/bin/activate
-cd StampService
+cd core
 pip install -r requirements.txt
 ```
 
 Run project
 ```
 terminal #1
-cd StampService
+cd core
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate 
@@ -79,14 +79,14 @@ python manage.py runserver
 ```
 ```
 terminal #2
-cd StampService
+cd core
 python3 manage.py launch_queue_listener
 ```
 
 Run tests
 
 ```
-cd StampService
+cd core
 python3 manage.py test
 ```
 
